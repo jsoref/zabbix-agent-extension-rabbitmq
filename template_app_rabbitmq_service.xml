@@ -725,7 +725,7 @@
                             <expression>{Template App Rabbitmq Service:grpavg[&quot;{#GROUPNAME}&quot;, &quot;rabbitmq.queue.messages[{#AGGVHOST},{#AGGQUEUENAME}]&quot;,last,0].min(#5)}&gt;{$MAX_MESSAGES:&quot;{#AGGVHOST}{#AGGQUEUENAME}&quot;}</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>Too much messages in vhost {#AGGVHOST} queue {#AGGQUEUENAME}</name>
+                            <name>Too many messages in vhost {#AGGVHOST} queue {#AGGQUEUENAME}</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
